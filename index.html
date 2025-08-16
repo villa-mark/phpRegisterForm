@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>BASIC REGISTRATION FORM</title>
+</head>
+<body>
+    <form action="">
+        <h1>REGISTRATION</h1>
+        <label for="first_name">First Name: <input type="text" id="first_name" autocomplete="off"></label> 
+        <label for="middle_name">Middle Name: <input type="text" id="middle_name" autocomplete="off"></label> 
+        <label for="last_name">Last Name: <input type="text" id="last_name" autocomplete="off"></label> 
+        <label for="email">Email: <input type="email" id="email" placeholder="sample@gmail.com" autocomplete="off" required></label> <p id="email_warning">Wrong Email Format (sample@gmail.com)</p>
+        <label for="contact_number">Contact Number: <input type="text" placeholder="0000-000-0000" id="contact_number" autocomplete="off"></label> <p  id="number_warning">Wrong Number Format (0000-000-0000)</p>
+        <label for="batch">Batch: <input type="text" id="batch" autocomplete="off"></label> 
+        <label for="id_number">ID Number: <input type="text" id="id_number" autocomplete="off"></label> 
+        <label for="technology">Technology:
+            <select id="technology" name="technology">
+              <option value="Computer">Computer</option>
+              <option value="Mechanical">Mechanical</option>
+              <option value="Electrical">Electrical</option>
+              <option value="Electronics">Electronics</option>
+            </select>
+        </label>
+        <button type="submit" id="submit_btn">Submit</button>
+    </form>
+
+    <!-- MODAL -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeModal">&times;</span>
+            <h2>Registered Successfully</h2>
+            <div id="modalData"></div>
+        </div>
+    </div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
